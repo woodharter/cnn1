@@ -1,0 +1,30 @@
+program: cnn_w.py
+method: bayes
+metric:
+  goal: minimize
+  name: val_accuracy
+parameters:
+  hidden_layer_size:
+    max: 32
+    min: 32
+    distribution: int_uniform
+  output_units:
+    max: 4
+    min: 1
+    distribution: int_uniform
+  layer_2_size:
+    max: 32
+    min: 14
+    distribution: int_uniform
+  layer_1_size:
+    max: 110
+    min: 9
+    distribution: int_uniform
+  pool_size:
+    max: 8
+    min: 1
+    distribution: int_uniform
+  epochs:
+    max: 102
+    min: 4
+    distribution: int_uniform
